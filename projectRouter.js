@@ -79,6 +79,7 @@ function validateProjectId(req, res, next) {
     })
 }
 
+// check that new project has valid object shape
 function validateProject(req, res, next) {
     const project = req.body;
     !project && res.status(400).json({ message: 'you need to provide a body' });
