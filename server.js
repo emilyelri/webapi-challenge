@@ -1,19 +1,14 @@
 const express = require('express');
 const server = express();
-const router = require('./users/userRouter');
+const projectsRouter = require('./projectRouter');
+const actionsRouter = require('./actionRouter');
 
 server.use(express.json());
-server.use(logger);
-server.use('/api/users', router);
+server.use('/api/projects', projectsRouter);
+server.use('/api/actions', actionsRouter);
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`)
-});
-
-//custom middleware
-function logger(req, res, next) {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url} \n`);
-  next();
-};
+    res.send(`<h1>Web API Sprint Challenge</h1>`)
+  });
 
 module.exports = server;
