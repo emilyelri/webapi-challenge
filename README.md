@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+_Express sits on top of Node, includes additional library. Express allows for routing and middleware_
+
 - [ ] Describe Middleware?
+
+_Middleware is function that is run between other functions in APIs. Either between each request or within specific requests before they can proceed._
 
 - [ ] Describe a Resource?
 
+_Everything is a resource - basically anything you send or receive from an api_
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+_Status codes and messages (json objects)_
+
 - [ ] How can we partition our application into sub-applications?
+
+_Using routing and express_
 
 ## Project Setup
 
